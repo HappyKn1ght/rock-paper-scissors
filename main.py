@@ -17,6 +17,7 @@ while True:
 
     if user_choice not in choices:
         print("Invalid choice! Please enter r, p, or s.")
+        continue
     else:
             
         print(f"You chose: {user_choice}")
@@ -43,7 +44,7 @@ while True:
     play_again = input("Play again? (y/n): ").lower().strip()
     if play_again != 'y':
         print("FINAL SCOREBOARD")
-        print(f"User Score\tComputer Score\n    {user_score}\t\t    {computer_score}\n")
+        print(f"User Score  Computer Score  Match Draw\n   {user_score}\t\t  {computer_score}\t\t{draw}\n")
         if user_score > computer_score:
             print("User Winner!")
         elif user_score < computer_score:
