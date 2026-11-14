@@ -15,7 +15,7 @@ A simple, interactive command-line Rock, Paper, Scissors game built in Python. C
 ## 🚀 How to Run
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/HappyKn1ght/number-guessing-game
+   git clone https://github.com/HappyKn1ght/rock-paper-scissors
    ```
 2. **Navigate into the project folder:**
    ```bash
