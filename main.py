@@ -8,6 +8,8 @@ computer_score = 0
 draw = 0
 
 choices = ['r', 'p', 's']
+fullName = {"r": "Rock", "p": "Paper", "s": "Scissors" }
+
 # Display game rules
 print("=== ROCK PAPER SCISSORS ===")
 print("Welcome to Rock-Paper-Scissors!\n")
@@ -29,13 +31,13 @@ while True:
         print("Invalid choice! Please enter r, p, or s.")
         continue
             
-    print(f"You chose: {user_choice}")
+    print(f"You chose: {fullName[user_choice]}")
     print("Now it's Computer's Turn...")
 
     computer = random.choice(choices)
-    print(f"Computer chose: {computer}")
+    print(f"Computer chose: {fullName[computer]}")
 
-    print(f"{user_choice} vs {computer}")
+    print(f"{fullName[user_choice]} vs {fullName[computer]}")
     if user_choice == computer:
         draw += 1
         print("<== It's a Draw! ==>")
